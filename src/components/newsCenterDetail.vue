@@ -29,7 +29,15 @@
   }
   .news-deatil{
     min-height: 6em;
-    padding:0 3.6em;
+    padding:1em 3.6em;
+    box-sizing: border-box;
+
+  }
+  /deep/ .news-deatil *{
+    line-height: 1.5;
+  }
+  /deep/ .news-deatil img{
+    max-width: 100%;
   }
   .news-deatil >>>h1 {
     font-size: 0.24em;
@@ -56,7 +64,7 @@
     text-indent: 2em;
   } */
 </style>
-<script type='ecmascript-6'>
+<script >
 	import pagination from './pagination.vue'
 	import Header from './header';
   import axios from 'axios'
