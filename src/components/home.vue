@@ -492,7 +492,6 @@
   }
   .case{
     padding:0.76em 3.7em 0.42em 3.7em;
-    text-align: center;
   }
   .case-list{
     display: flex;
