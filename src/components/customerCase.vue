@@ -1,4 +1,4 @@
-<template> 
+<template>
   <div class="customer">
     <Header :currentN="partValue"></Header>
     <div class="custom-banner">
@@ -113,7 +113,7 @@
         partValue:2,
         caseList:[],
         caseIndex:0,
-        casUrl:"/official-website/customerCase/getCustomerCaseGroupName",
+        casUrl:"/customerCase/getCustomerCaseGroupName",
         totalPages:1,  //默认总页数为1
         currentNav:"APP开发", //默认当前类别
         selectItemPage:1  ,//默认选中页面
@@ -145,7 +145,7 @@
         }
       }
 
-      _this.$get('/official-website/customerCase/getCustomerCaseByPage',dataObject).then(data=>{
+      _this.$get('/customerCase/getCustomerCaseByPage',dataObject).then(data=>{
         var seller=JSON.stringify(data);
         //console.log('结果:'+seller);
         _this.caseList=data.list;
@@ -177,7 +177,7 @@
           caseGroupName:_this.currentNav,
           pageSize:_this.pageNumber
         }
-        _this.$get('/official-website/customerCase/getCustomerCaseByPage',dataObject).then(data=>{
+        _this.$get('/customerCase/getCustomerCaseByPage',dataObject).then(data=>{
           var seller=JSON.stringify(data);
           //console.log('结果:'+seller);
           _this.caseList=data.list;
@@ -197,7 +197,7 @@
           pageSize:_this.pageNumber
         }
         //console.log(dataObject);
-        _this.$get('/official-website/customerCase/getCustomerCaseByPage',dataObject).then(data=>{
+        _this.$get('/customerCase/getCustomerCaseByPage',dataObject).then(data=>{
           var seller=JSON.stringify(data);
           //console.log('结果:'+seller);
           _this.caseList=data.list;

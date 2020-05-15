@@ -46,7 +46,7 @@
     font-size: 0.14em;
   }
   .contact-form{
-    width: 8em;
+    width: 800px;
     margin:0 auto 1.42em auto;
     position: relative;
     padding:1em 1em 0.36em 1em;
@@ -63,7 +63,7 @@
   .confom-main{
     display: flex;
     justify-content: space-between;
-    align-items: flex-start;
+    align-items: center;
   }
   .confomml-name,.confomm-right{
     display: flex;
@@ -71,6 +71,7 @@
     align-items: flex-start;
   }
   .confomml-name input,.confomm-right textarea{
+    resize: none;
     width: 332px;
     font-size: 16px;
     border: solid 1px #e5e5e5;
@@ -111,7 +112,7 @@
   }
 </style>
 
-<script type='ecmascript-6'>
+<script >
 	import axios from 'axios'
 	//import Header from './../Header';
   import Header from './header.vue';
@@ -169,7 +170,7 @@
         ];
         for(var index = 0; index < markers.length; index++ ){
           var point = new BMap.Point(markers[index].position.lng,markers[index].position.lat);
-          var marker = new BMap.Marker(point,{icon:new BMap.Icon("http://api.map.baidu.com/lbsapi/createmap/images/icon.png",new BMap.Size(20,25),{
+          var marker = new BMap.Marker(point,{icon:new BMap.Icon("https://api.map.baidu.com/lbsapi/createmap/images/icon.png",new BMap.Size(20,25),{
             imageOffset: new BMap.Size(markers[index].imageOffset.width,markers[index].imageOffset.height)
           })});
           var label = new BMap.Label(markers[index].title,{offset: new BMap.Size(25,5)});
@@ -216,7 +217,7 @@
       textFun(){
         axios({
           method:'post',
-          url:'http://39.98.80.223:8080/official-website/contactUs/projectNeed',
+          url:'https://www.zhengshangwl.com/contactUs/projectNeed',
           data:{
             name:"haha",
             phoneNumber:"15038305394",
@@ -274,7 +275,7 @@
               //console.log(dataStr);
               axios({
                 method:'post',
-                url:'http://39.98.80.223:8080/official-website/contactUs/projectNeed',
+                url:'https://www.zhengshangwl.com/contactUs/projectNeed',
                 data:dataStr,
                 headers:{'Content-Type': 'application/x-www-form-urlencoded'},
                 transformRequest: function(obj) {
