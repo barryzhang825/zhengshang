@@ -3,7 +3,14 @@
     <div class="footer-content">
       <div class="map-img"><img src="../../static/images/map.png" alt="公司地址"></div>
       <div class="information">
-        <div class="info-text">QQ邮箱 ：943870975@qq.com <br />联系电话：15238699705<br />办公地址：郑州市郑东新区金水东路绿地新都会6号楼1521/1522</div>
+        <div class="info-text">QQ邮箱 ：943870975@qq.com <br />
+          联系电话：15238699705<br />
+          办公地址：郑州市郑东新区金水东路绿地新都会6号楼1521/1522<br />
+          分部：弘廷科技<br />
+          办公地址：郑州市管城区航海东路2号55号楼22层307号<br />
+          分部：智亘科技<br />
+          办公地址：郑州市郑东新区金水东路绿地新都会6号楼1521
+        </div>
         <div class="info-text">COPYRIGHT 2020 河南正尚网络科技有限公司版权所有 ALL RIGHTS RESERVED<br /><span class="go-info" @click="goYuFun">豫ICP备20012527号-1</span></div>
       </div>
     </div>
@@ -36,7 +43,7 @@
     text-align: left;
   }
   .info-text:first-child{
-    margin-bottom: 2em;
+    margin-bottom: 1.5em;
   }
   .go-info{
     cursor: pointer;
