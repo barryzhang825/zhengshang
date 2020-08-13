@@ -1,6 +1,29 @@
 <template>
   <div class="home">
-    <Header :currentN="partValue"></Header>
+<!--    <Header :currentN="partValue"></Header>-->
+    <HomeHeader :menu="0"></HomeHeader>
+    <div class="home-back">
+          <div class="banner">
+            <el-carousel trigger="click" height="6em" :loop="true">
+              <el-carousel-item v-for="(item,index) in bannerList" :key="index">
+                <div class="context">
+                  <div class="line1">专业的互联网方案解决专家</div>
+                  <div class="line2">
+                    以互联网定制开发为主营业务，专注微信服务号、企业号、微信公众平台开发和微信小程序等的微信开发服务。凭借专业的研发团队，在微信商城、会员、分销、营销互动以及商业地产、酒店、医疗美容、汽车和零售等行业具有丰富的开发经验，全方位满足企业个性化需求
+                  </div>
+                  <div class="line3">
+                    <div class="text"></div>
+                    <img src="../assets/images/more-white.png" alt="">
+                  </div>
+                </div>
+              </el-carousel-item>
+            </el-carousel>
+            <!-- <div class="banner-btn">立即咨询</div> -->
+          </div>
+
+
+
+    </div>
     <!-- <div class="banner">
       <div class="swiper-container">
         <div class="swiper-wrapper">
@@ -23,16 +46,19 @@
       </li>
     </ul>
     <div class="reveal-top" data-scroll-reveal="enter left and move 50px over 1.33s">dowebok.com</div> -->
-    <div class="banner">
-      <el-carousel trigger="click" height="6em" :loop="true">
-        <el-carousel-item v-for="(item,index) in bannerList" :key="index">
-          <img class="banner-item" :src="item.url" :alt="item.id">
-          <div class="banner-text">{{item.text}}</div>
-          <div class="banner-btn" v-show="index==0" @click="goContactUs">立即咨询</div>
-        </el-carousel-item>
-      </el-carousel>
-      <!-- <div class="banner-btn">立即咨询</div> -->
-    </div>
+
+
+
+<!--    <div class="banner">-->
+<!--      <el-carousel trigger="click" height="6em" :loop="true">-->
+<!--        <el-carousel-item v-for="(item,index) in bannerList" :key="index">-->
+<!--          <img class="banner-item" :src="item.url" :alt="item.id">-->
+<!--          <div class="banner-text">{{item.text}}</div>-->
+<!--          <div class="banner-btn" v-show="index==0" @click="goContactUs">立即咨询</div>-->
+<!--        </el-carousel-item>-->
+<!--      </el-carousel>-->
+<!--      &lt;!&ndash; <div class="banner-btn">立即咨询</div> &ndash;&gt;-->
+<!--    </div>-->
     <div class="service">
       <div class="home-plate">
         <div class="home-title">我们的服务</div>
@@ -128,11 +154,12 @@
     <AboutUsDetail></AboutUsDetail>
    </div>
 </template>
-<script type='ecmascript-6'>
+<script >
   import axios from 'axios'
   import Swiper from "swiper"
   import AboutUsDetail from './aboutUsdetail.vue'
   import Header from './header.vue';
+  import HomeHeader from "./HomeHeader";
   //import CustomerCaseDetail from './customerCaseDetail.vue';
 	export default {
     props:{
@@ -318,6 +345,7 @@
 
     },
     components: {
+      HomeHeader,
       AboutUsDetail,
       Header
       //CustomerCaseDetail
@@ -364,13 +392,66 @@
     watch: {}
 	}
 </script>
-<style scoped>
- .banner >>>.swiper-pagination-custom {
+<style scoped lang="less">
+
+  .home-back {
+    background-image: url("../assets/images/home-back.png");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    min-width: 1300px;
+    height: 1080px;
+    .context {
+      padding-top: 300px;
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      .line1 {
+        font-size: 70px;
+        font-weight: 500;
+        color: rgba(255, 255, 255, 1);
+      }
+
+      .line2 {
+        margin-top: 49px;
+        margin-bottom: 115px;
+        font-size: 14px;
+        color: rgba(255, 255, 255, 1);
+        max-width: 600px;
+        line-height: 24px;
+        text-align: center;
+      }
+
+      .line3 {
+        width: 164px;
+        height: 62px;
+        background: rgba(254, 130, 56, 1);
+        border-radius: 31px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+
+        img {
+          width: 24px;
+          height: 9px;
+        }
+      }
+    }
+  }
+
+  /deep/ .el-carousel__container{
+    height: 9em !important;
+  }
+ .banner >.swiper-pagination-custom {
     bottom: 10px;
     left: 0;
     width: 100%;
   }
-  .banner >>>.swiper-pagination-customs {
+  .banner >.swiper-pagination-customs {
     width: 30px;
     height: 6px;
     border-radius: 3px;
@@ -379,7 +460,7 @@
     opacity: 1;
     margin: 0 5px;
   }
-  .banner >>>.swiper-pagination-customs-active {
+  .banner >.swiper-pagination-customs-active {
     opacity: 1;
     background-color: #f5ce30;
   }
@@ -388,14 +469,14 @@
     width: 100%;
     height: 600px;
   }
-  .banner >>>.el-carousel__button{
+  .banner >.el-carousel__button{
     width: 30px;
     height: 6px;
     background-color: #fff;
     border-radius: 3px;
     opacity: 1;
   }
-  .banner >>>.el-carousel__indicator.is-active button{
+  .banner >.el-carousel__indicator.is-active button{
     background-color: #f5ce30;
   }
   .banner{
@@ -786,7 +867,7 @@
   .about-text{
     margin: 0.25em 0 0 0.38em;
   }
-  .about-text >>>p{
+  .about-text >p{
     font-size: 0.18em;
     line-height: 2.22em;
     color: #1a1a1a;

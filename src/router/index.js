@@ -54,7 +54,40 @@ const routes = [
     path: '/contactUs',
     name: 'ContactUs',
     component: ContactUs
+  },
+
+
+  {
+    path: '/application',
+    name: 'Application',
+    component: () => import( '../view/Application')
+  },
+  {
+    path: '/business',
+    name: 'Business',
+    component: () => import( '../view/Business')
+  },
+  {
+    path: '/gov-cloud',
+    name: 'GovCloud',
+    component: () => import( '../view/GovCloud')
+  },
+  {
+    path: '/mini-program',
+    name: 'MiniProgram',
+    component: () => import( '../view/MiniProgram')
+  },
+  {
+    path: '/things',
+    name: 'Things',
+    component: () => import( '../view/Things')
+  },
+  {
+    path: '/web-construct',
+    name: 'WebConstruct',
+    component: () => import( '../view/WebConstruct')
   }
+
 
 ]
 //3、创建路由实例
