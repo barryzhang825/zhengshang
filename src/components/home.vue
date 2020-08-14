@@ -410,7 +410,7 @@
       align-items: center;
 
       .line1 {
-        font-size: 70px;
+        font-size: 64px;
         font-weight: 500;
         color: rgba(255, 255, 255, 1);
       }
@@ -418,10 +418,10 @@
       .line2 {
         margin-top: 49px;
         margin-bottom: 115px;
-        font-size: 14px;
+        font-size: 15px;
         color: rgba(255, 255, 255, 1);
         max-width: 600px;
-        line-height: 24px;
+        line-height: 1.8;
         text-align: center;
       }
 
