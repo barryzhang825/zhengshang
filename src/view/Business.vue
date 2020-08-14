@@ -9,7 +9,7 @@
         </h2>
         <div class="items">
           <div class="column column1">
-            <div class="line line0" @mouseenter="itemHover(0)" @mouseleave="itemHover(-1)">
+            <div class="line line0 active-item1" @mouseenter="itemHover(0)" @mouseleave="itemHover(-1)">
               <div class="context">
                 <div class="left-logo">
                   <img src="../assets/images/a1.png" alt="">
@@ -20,7 +20,7 @@
                 <img :src="activeIndex==0?more0:more1" alt="">
               </div>
             </div>
-            <div class="line line1" @mouseenter="itemHover(1)" @mouseleave="itemHover(-1)">
+            <div class="line line1 active-item1" @mouseenter="itemHover(1)" @mouseleave="itemHover(-1)">
               <div class="context">
                 <div class="left-logo">
                   <img src="../assets/images/a2.png" alt="">
@@ -31,7 +31,7 @@
                 <img :src="activeIndex==1?more0:more1" alt="">
               </div>
             </div>
-            <div class="line line2" @mouseenter="itemHover(2)" @mouseleave="itemHover(-1)">
+            <div class="line line2 active-item1" @mouseenter="itemHover(2)" @mouseleave="itemHover(-1)">
               <div class="context">
                 <div class="left-logo">
                   <img src="../assets/images/a3.png" alt="">
@@ -44,7 +44,7 @@
             </div>
           </div>
           <div class="column column2">
-            <div class="line line3" @mouseenter="itemHover(3)" @mouseleave="itemHover(-1)">
+            <div class="line line3 active-item2" @mouseenter="itemHover(3)" @mouseleave="itemHover(-1)">
               <div class="context">
                 <div class="left-logo">
                   <img src="../assets/images/a4.png" alt="">
@@ -55,7 +55,7 @@
                 <img :src="activeIndex==3?more0:more1" alt="">
               </div>
             </div>
-            <div class="line line4" @mouseenter="itemHover(4)" @mouseleave="itemHover(-1)">
+            <div class="line line4 active-item2" @mouseenter="itemHover(4)" @mouseleave="itemHover(-1)">
               <div class="context">
                 <div class="left-logo">
                   <img src="../assets/images/a5.png" alt="">
@@ -68,7 +68,7 @@
             </div>
           </div>
           <div class="column column3">
-            <div class="line line5" @mouseenter="itemHover(5)" @mouseleave="itemHover(-1)">
+            <div class="line line5 active-item3" @mouseenter="itemHover(5)" @mouseleave="itemHover(-1)">
               <div class="context">
                 <div class="left-logo">
                   <img src="../assets/images/a6.png" alt="">
@@ -79,7 +79,7 @@
                 <img :src="activeIndex==5?more0:more1" alt="">
               </div>
             </div>
-            <div class="line line6" @mouseenter="itemHover(6)" @mouseleave="itemHover(-1)">
+            <div class="line line6 active-item3" @mouseenter="itemHover(6)" @mouseleave="itemHover(-1)">
               <div class="context">
                 <div class="left-logo">
                   <img src="../assets/images/a7.png" alt="">
@@ -90,7 +90,7 @@
                 <img :src="activeIndex==6?more0:more1" alt="">
               </div>
             </div>
-            <div class="line line7" @mouseenter="itemHover(7)" @mouseleave="itemHover(-1)">
+            <div class="line line7 active-item3" @mouseenter="itemHover(7)" @mouseleave="itemHover(-1)">
               <div class="context">
                 <div class="left-logo">
                   <img src="../assets/images/a8.png" alt="">
@@ -128,37 +128,37 @@
               </div>
             </div>
             <div class="right">
-              <div class="right-item">
+              <div class="right-item active-item5">
                 <img src="../assets/images/p1.png" alt="">
                 <div class="text">行业数据分析</div>
               </div>
               <div class="connect"></div>
-              <div class="right-item">
+              <div class="right-item active-item5">
                 <img src="../assets/images/p2.png" alt="">
                 <div class="text">品牌定位规范</div>
               </div>
               <div class="connect"></div>
-              <div class="right-item">
+              <div class="right-item active-item5">
                 <img src="../assets/images/p3.png" alt="">
                 <div class="text">功能需求调研</div>
               </div>
               <div class="connect"></div>
-              <div class="right-item">
+              <div class="right-item active-item5">
                 <img src="../assets/images/p4.png" alt="">
                 <div class="text">交互视觉设计</div>
               </div>
               <div class="connect"></div>
-              <div class="right-item">
+              <div class="right-item active-item5">
                 <img src="../assets/images/p5.png" alt="">
                 <div class="text">双端同步开发</div>
               </div>
               <div class="connect"></div>
-              <div class="right-item">
+              <div class="right-item active-item5">
                 <img src="../assets/images/p6.png" alt="">
                 <div class="text">后端并行开发</div>
               </div>
               <div class="connect"></div>
-              <div class="right-item last-item">
+              <div class="right-item last-item active-item5">
                 <img src="../assets/images/p7.png" alt="">
                 <div class="text">测试上线交付使用</div>
               </div>
@@ -173,35 +173,35 @@
         <div class="delivery">
           <h2 class="title">交付标准</h2>
           <div class="items">
-            <div class="item">
+            <div class="item active-item6">
               <div class="logo">
                 <img src="../assets/images/d1.png" alt="">
               </div>
               <div class="item-text">项目计划书</div>
               <img class="hoverImg" src="../assets/images/df1.png">
             </div>
-            <div class="item">
+            <div class="item active-item6">
               <div class="logo">
                 <img src="../assets/images/d2.png" alt="">
               </div>
               <div class="item-text">设计稿源文件</div>
               <img class="hoverImg" src="../assets/images/df2.png">
             </div>
-            <div class="item">
+            <div class="item active-item6">
               <div class="logo">
                 <img src="../assets/images/d3.png" alt="">
               </div>
               <div class="item-text">源代码</div>
               <img class="hoverImg" src="../assets/images/df3.png">
             </div>
-            <div class="item">
+            <div class="item active-item6">
               <div class="logo">
                 <img src="../assets/images/d4.png" alt="">
               </div>
               <div class="item-text">使用文档</div>
               <img class="hoverImg" src="../assets/images/df4.png">
             </div>
-            <div class="item">
+            <div class="item active-item6">
               <div class="logo">
                 <img src="../assets/images/d5.png" alt="">
               </div>
@@ -297,35 +297,35 @@
             <div class="dots">
               <img src="../assets/images/dots.png" alt="">
             </div>
-            <div class="left-img-box">
+            <div class="left-img-box active-item7">
               <img src="../assets/images/ba.png" alt="">
             </div>
           </div>
           <div class="right">
             <div class="support-title">技术支持</div>
             <div class="support-items">
-              <div class="support-item">
+              <div class="support-item active-item8">
                 <div class="support-item-title">
                   <img src="../assets/images/su1.png">
                   <div class="title-text">程序使用培训</div>
                 </div>
                 <div class="support-item-context">程序使用培训程序使用培训程序使用培训程序使用培训程序使用培训程序使用培训程序使用培训</div>
               </div>
-              <div class="support-item">
+              <div class="support-item active-item8">
                 <div class="support-item-title">
                   <img src="../assets/images/su2.png">
                   <div class="title-text">项目问题咨询</div>
                 </div>
                 <div class="support-item-context">程序使用培训程序使用培训程序使用培训程序使用培训程序使用培训程序使用培训程序使用培训</div>
               </div>
-              <div class="support-item">
+              <div class="support-item active-item8">
                 <div class="support-item-title">
                   <img src="../assets/images/su3.png">
                   <div class="title-text">项目部署及维护</div>
                 </div>
                 <div class="support-item-context">程序使用培训程序使用培训程序使用培训程序使用培训程序使用培训程序使用培训程序使用培训</div>
               </div>
-              <div class="support-item">
+              <div class="support-item active-item8">
                 <div class="support-item-title">
                   <img src="../assets/images/su4.png">
                   <div class="title-text">后期功能升级和修改</div>
@@ -374,6 +374,19 @@
           this.screenHeight = document.body.clientHeight;
         })();
       };
+
+
+      this.$nextTick(()=> {
+        //轮播图特效
+        this.$ami('.active-item1', 0, 'left', '80%', 0.9, true);
+        this.$ami('.active-item2:nth-child(1)', 0, 'top', '80%', 0.9, true);
+        this.$ami('.active-item2:nth-child(2)', 0, 'bottom', '80%', 0.9, true);
+        this.$ami('.active-item3', 0, 'right', '80%', 0.9, true);
+        this.$ami('.active-item5', 0, 'right', '0%', 0.1, true);
+        this.$ami('.active-item6', 0, 'right', '0%', 0.1, true);
+        this.$ami('.active-item7', 0, 'left', '100%', 0.1, true);
+        this.$ami('.active-item8', 0, 'right', '100%', 0.1, true);
+      })
     }
   }
 </script>
@@ -381,7 +394,7 @@
 <style scoped lang="less">
   .business-page {
     width: 100%;
-    min-width: 1300px;;
+    min-width: 1300px;
 
     .ability {
       width: 100%;

@@ -26,48 +26,48 @@
             </div>
           </div>
           <div class="right">
-            <img src="../assets/images/circle.png" alt="">
-            <div class="item item0">
+            <img class="active-item0" src="../assets/images/circle.png" alt="">
+            <div class="item item0 active-item4">
               <img class="visible" src="../assets/images/kk0.png" alt="">
               <img class="hidden" src="../assets/images/kkh0.png" alt="">
               <div class="text">社交</div>
             </div>
-            <div class="item item1">
+            <div class="item item1 active-item1">
               <img class="visible" src="../assets/images/kk1.png" alt="">
               <img class="hidden" src="../assets/images/kkh1.png" alt="">
               <div class="text">直播</div>
             </div>
-            <div class="item item2">
+            <div class="item item2 active-item3">
               <img class="visible" src="../assets/images/kk2.png" alt="">
               <img class="hidden" src="../assets/images/kkh2.png" alt="">
               <div class="text">教育</div>
             </div>
-            <div class="item item3">
+            <div class="item item3 active-item2">
               <img class="visible" src="../assets/images/kk3.png" alt="">
               <img class="hidden" src="../assets/images/kkh3.png" alt="">
               <div class="text">医疗</div>
             </div>
-            <div class="item item4">
+            <div class="item item4 active-item9">
               <img class="visible" src="../assets/images/kk4.png" alt="">
               <img class="hidden" src="../assets/images/kkh4.png" alt="">
               <div class="text">健身</div>
             </div>
-            <div class="item item5">
+            <div class="item item5 active-item8">
               <img class="visible" src="../assets/images/kk5.png" alt="">
               <img class="hidden" src="../assets/images/kkh5.png" alt="">
               <div class="text">团购</div>
             </div>
-            <div class="item item6">
+            <div class="item item6 active-item7">
               <img class="visible" src="../assets/images/kk6.png" alt="">
               <img class="hidden" src="../assets/images/kkh6.png" alt="">
               <div class="text">外卖</div>
             </div>
-            <div class="item item7">
+            <div class="item item7 active-item6">
               <img class="visible" src="../assets/images/kk7.png" alt="">
               <img class="hidden" src="../assets/images/kkh7.png" alt="">
               <div class="text">跑腿</div>
             </div>
-            <div class="item item8">
+            <div class="item item8 active-item5">
               <img class="visible" src="../assets/images/kk8.png" alt="">
               <img class="hidden" src="../assets/images/kkh8.png" alt="">
               <div class="text">交友</div>
@@ -165,31 +165,31 @@
       <div class="deliver-center">
         <div class="deliver-title">交付标准</div>
         <div class="items">
-          <div class="item">
+          <div class="item active-item10">
             <div class="circle">
               <img src="../assets/images/q1.png" alt="">
             </div>
             <div class="text">产品文档</div>
           </div>
-          <div class="item">
+          <div class="item active-item10">
             <div class="circle">
               <img src="../assets/images/q2.png" alt="">
             </div>
             <div class="text">设计稿源文件</div>
           </div>
-          <div class="item">
+          <div class="item active-item10">
             <div class="circle">
               <img src="../assets/images/q3.png" alt="">
             </div>
             <div class="text">源代码</div>
           </div>
-          <div class="item">
+          <div class="item active-item10">
             <div class="circle">
               <img src="../assets/images/q4.png" alt="">
             </div>
             <div class="text">使用文档</div>
           </div>
-          <div class="item">
+          <div class="item active-item10">
             <div class="circle">
               <img src="../assets/images/q5.png" alt="">
             </div>
@@ -292,19 +292,19 @@
         技术支持
       </div>
       <div class="items">
-        <div class="item">
+        <div class="item active-item11">
           <img src="../assets/images/j1.png" class="item-img" alt="">
           <div class="item-title">程序使用培训</div>
         </div>
-        <div class="item">
+        <div class="item active-item11">
           <img src="../assets/images/j2.png" class="item-img" alt="">
           <div class="item-title">项目问题咨询</div>
         </div>
-        <div class="item">
+        <div class="item active-item11">
           <img src="../assets/images/j3.png" class="item-img" alt="">
           <div class="item-title">项目部署及维护</div>
         </div>
-        <div class="item">
+        <div class="item active-item11">
           <img src="../assets/images/j4.png" class="item-img" alt="">
           <div class="item-title">后期功能升级和修改</div>
         </div>
@@ -355,6 +355,28 @@
         }
 
       }
+    },
+    mounted() {
+      this.$nextTick(()=> {
+        //轮播图特效
+        this.$ami('.active-item0', 300, 'left', '0%', 0.2, true);
+        this.$ami('.active-item1', 0, 'left', '0%', 0.2, true);
+        this.$ami('.active-item2', 100, 'left', '0%', 0.2, true);
+        this.$ami('.active-item3', 200, 'left', '0%', 0.2, true);
+        this.$ami('.active-item4', 300, 'left', '0%', 0.2, true);
+        this.$ami('.active-item5', 400, 'left', '0%', 0.2, true);
+        this.$ami('.active-item6', 500, 'left', '0%', 0.2, true);
+        this.$ami('.active-item7', 600, 'left', '0%', 0.2, true);
+        this.$ami('.active-item8', 700, 'left', '0%', 0.2, true);
+        this.$ami('.active-item9', 800, 'left', '0%', 0.2, true);
+
+        this.$ami('.active-item10:nth-child(1)', 100, 'top', '50%', 0.2, true);
+        this.$ami('.active-item10:nth-child(2)', 100, 'bottom', '50%', 0.2, true);
+        this.$ami('.active-item10:nth-child(3)', 100, 'top', '50%', 0.2, true);
+        this.$ami('.active-item10:nth-child(4)', 100, 'bottom', '50%', 0.2, true);
+        this.$ami('.active-item10:nth-child(5)', 100, 'top', '50%', 0.2, true);
+        this.$ami('.active-item11', 100, 'top', '50%', 0.2, true);
+      })
     }
   }
 </script>

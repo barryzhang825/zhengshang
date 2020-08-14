@@ -7,58 +7,58 @@
         <div class="title">可开发行业</div>
         <div class="content">
           <div class="left">
-            <img :src="businessList[businessIndex].img" alt="">
+            <img class="active-img" :src="businessList[businessIndex].img" alt="">
           </div>
           <div class="middle">
             <img src="../assets/images/l.png" alt="">
           </div>
           <div class="right">
-            <div class="item" :class="businessIndex==0?'selected':''" @click="businessSelect(0)">
+            <div class="item test-item" :class="businessIndex==0?'selected':''" @click="businessSelect(0)">
               <img class="visible" src="../assets/images/z1.png" alt="">
               <img class="hidden" src="../assets/images/zz1.png" alt="">
-              <div class="text">社交</div>
+              <div class="text">智能家居</div>
             </div>
-            <div class="item" :class="businessIndex==1?'selected':''" @click="businessSelect(1)">
+            <div class="item test-item" :class="businessIndex==1?'selected':''" @click="businessSelect(1)">
               <img class="visible" src="../assets/images/z2.png" alt="">
               <img class="hidden" src="../assets/images/zz2.png" alt="">
               <div class="text">教育</div>
             </div>
-            <div class="item" :class="businessIndex==2?'selected':''" @click="businessSelect(2)">
+            <div class="item test-item" :class="businessIndex==2?'selected':''" @click="businessSelect(2)">
               <img class="visible" src="../assets/images/z3.png" alt="">
               <img class="hidden" src="../assets/images/zz3.png" alt="">
               <div class="text">直播</div>
             </div>
-            <div class="item" :class="businessIndex==3?'selected':''" @click="businessSelect(3)">
+            <div class="item test-item" :class="businessIndex==3?'selected':''" @click="businessSelect(3)">
               <img class="visible" src="../assets/images/z4.png" alt="">
               <img class="hidden" src="../assets/images/zz4.png" alt="">
               <div class="text">医疗</div>
             </div>
-            <div class="item" :class="businessIndex==4?'selected':''" @click="businessSelect(4)">
+            <div class="item test-item" :class="businessIndex==4?'selected':''" @click="businessSelect(4)">
               <img class="visible" src="../assets/images/z5.png" alt="">
               <img class="hidden" src="../assets/images/zz5.png" alt="">
               <div class="text">商城</div>
             </div>
-            <div class="item" :class="businessIndex==5?'selected':''" @click="businessSelect(5)">
+            <div class="item test-item" :class="businessIndex==5?'selected':''" @click="businessSelect(5)">
               <img class="visible" src="../assets/images/z6.png" alt="">
               <img class="hidden" src="../assets/images/zz6.png" alt="">
               <div class="text">外卖</div>
             </div>
-            <div class="item" :class="businessIndex==6?'selected':''" @click="businessSelect(6)">
+            <div class="item test-item" :class="businessIndex==6?'selected':''" @click="businessSelect(6)">
               <img class="visible" src="../assets/images/z7.png" alt="">
               <img class="hidden" src="../assets/images/zz7.png" alt="">
               <div class="text">二手车</div>
             </div>
-            <div class="item" :class="businessIndex==7?'selected':''" @click="businessSelect(7)">
+            <div class="item test-item" :class="businessIndex==7?'selected':''" @click="businessSelect(7)">
               <img class="visible" src="../assets/images/z8.png" alt="">
               <img class="hidden" src="../assets/images/zz8.png" alt="">
               <div class="text">健身</div>
             </div>
-            <div class="item" :class="businessIndex==8?'selected':''" @click="businessSelect(8)">
+            <div class="item test-item" :class="businessIndex==8?'selected':''" @click="businessSelect(8)">
               <img class="visible" src="../assets/images/z9.png" alt="">
               <img class="hidden" src="../assets/images/zz9.png" alt="">
               <div class="text">交友</div>
             </div>
-            <div class="item" :class="businessIndex==9?'selected':''" @click="businessSelect(9)">
+            <div class="item test-item" :class="businessIndex==9?'selected':''" @click="businessSelect(9)">
               <img class="visible" src="../assets/images/z10.png" alt="">
               <img class="hidden" src="../assets/images/zz10.png" alt="">
               <div class="text">房产</div>
@@ -77,7 +77,7 @@
       <div class="center">
         <div class="title">交付标准</div>
         <div class="items">
-          <div class="item">
+          <div class="item active-item2">
             <div class="top">
               <img src="../assets/images/df1.png" alt="">
             </div>
@@ -86,7 +86,7 @@
             </div>
             <div class="bottom">产品文档</div>
           </div>
-          <div class="item">
+          <div class="item active-item2">
             <div class="top">
               <img src="../assets/images/df2.png" alt="">
             </div>
@@ -95,7 +95,7 @@
             </div>
             <div class="bottom">设计稿源文件</div>
           </div>
-          <div class="item">
+          <div class="item active-item2">
             <div class="top">
               <img src="../assets/images/df3.png" alt="">
             </div>
@@ -104,7 +104,7 @@
             </div>
             <div class="bottom">源代码</div>
           </div>
-          <div class="item">
+          <div class="item active-item2">
             <div class="top">
               <img src="../assets/images/df4.png" alt="">
             </div>
@@ -113,7 +113,7 @@
             </div>
             <div class="bottom">使用文档</div>
           </div>
-          <div class="item">
+          <div class="item active-item2">
             <div class="top">
               <img src="../assets/images/df5.png" alt="">
             </div>
@@ -160,19 +160,19 @@
             技术支持
           </div>
           <div class="items">
-            <div class="item">
+            <div class="item active-item3">
               <img src="../assets/images/j1.png" class="item-img" alt="">
               <div class="item-title">程序使用培训</div>
             </div>
-            <div class="item">
+            <div class="item active-item3">
               <img src="../assets/images/j2.png" class="item-img" alt="">
               <div class="item-title">项目问题咨询</div>
             </div>
-            <div class="item">
+            <div class="item active-item3">
               <img src="../assets/images/j3.png" class="item-img" alt="">
               <div class="item-title">项目部署及维护</div>
             </div>
-            <div class="item">
+            <div class="item active-item3">
               <img src="../assets/images/j4.png" class="item-img" alt="">
               <div class="item-title">后期功能升级和修改</div>
             </div>
@@ -304,6 +304,35 @@
           this.screenHeight = document.body.clientHeight;
         })();
       };
+
+
+      this.$nextTick(()=>{
+        //轮播图特效
+        this.$ami('.active-img',0,'left','100%',0.9,true);
+
+        this.$ami('.test-item:nth-child(1)',0,'left','100%',0.9,true);
+        this.$ami('.test-item:nth-child(2)',0,'right','100%',0.9,true);
+        this.$ami('.test-item:nth-child(3)',0,'left','100%',0.9,true);
+        this.$ami('.test-item:nth-child(4)',0,'right','100%',0.9,true);
+        this.$ami('.test-item:nth-child(5)',0,'left','100%',0.9,true);
+        this.$ami('.test-item:nth-child(6)',0,'right','100%',0.9,true);
+        this.$ami('.test-item:nth-child(7)',0,'left','100%',0.9,true);
+        this.$ami('.test-item:nth-child(8)',0,'right','100%',0.9,true);
+        this.$ami('.test-item:nth-child(9)',0,'left','100%',0.9,true);
+        this.$ami('.test-item:nth-child(10)',0,'right','100%',0.9,true);
+
+
+        this.$ami('.active-item2:nth-child(1)',0,'top','100%',0,true);
+        this.$ami('.active-item2:nth-child(2)',100,'bottom','100%',0,true);
+        this.$ami('.active-item2:nth-child(3)',200,'top','100%',0,true);
+        this.$ami('.active-item2:nth-child(4)',300,'bottom','100%',0,true);
+        this.$ami('.active-item2:nth-child(5)',400,'top','100%',0,true);
+
+
+
+        this.$ami('.active-item3',0,'top','0%',0.5,true);
+
+      });
     }
   }
 </script>

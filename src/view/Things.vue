@@ -9,7 +9,7 @@
             可开发行业
           </div>
           <div class="list-line1">
-            <div class="item" @mouseenter="itemHover(0)" @mouseleave="itemHover(-1)">
+            <div class="item active-item1" @mouseenter="itemHover(0)" @mouseleave="itemHover(-1)">
               <div class="item-line1">
                 <img :src="activeIndex==0?require('../assets/images/kkh0.png'):require('../assets/images/kk0.png')"
                      alt="">
@@ -22,7 +22,7 @@
                 <img v-show="activeIndex==0" src="../assets/images/more0.png" alt="">
               </div>
             </div>
-            <div class="item" @mouseenter="itemHover(1)" @mouseleave="itemHover(-1)">
+            <div class="item active-item1" @mouseenter="itemHover(1)" @mouseleave="itemHover(-1)">
               <div class="item-line1">
                 <img :src="activeIndex==1?require('../assets/images/kkh1.png'):require('../assets/images/kk1.png')"
                      alt="">
@@ -35,7 +35,7 @@
                 <img v-show="activeIndex==1" src="../assets/images/more0.png" alt="">
               </div>
             </div>
-            <div class="item" @mouseenter="itemHover(2)" @mouseleave="itemHover(-1)">
+            <div class="item active-item1" @mouseenter="itemHover(2)" @mouseleave="itemHover(-1)">
               <div class="item-line1">
                 <img :src="activeIndex==2?require('../assets/images/kkh2.png'):require('../assets/images/kk2.png')"
                      alt="">
@@ -48,7 +48,7 @@
                 <img v-show="activeIndex==2" src="../assets/images/more0.png" alt="">
               </div>
             </div>
-            <div class="item" @mouseenter="itemHover(3)" @mouseleave="itemHover(-1)">
+            <div class="item active-item1" @mouseenter="itemHover(3)" @mouseleave="itemHover(-1)">
               <div class="item-line1">
                 <img :src="activeIndex==3?require('../assets/images/kkh3.png'):require('../assets/images/kk3.png')"
                      alt="">
@@ -61,7 +61,7 @@
                 <img v-show="activeIndex==3" src="../assets/images/more0.png" alt="">
               </div>
             </div>
-            <div class="item" @mouseenter="itemHover(4)" @mouseleave="itemHover(-1)">
+            <div class="item active-item1" @mouseenter="itemHover(4)" @mouseleave="itemHover(-1)">
               <div class="item-line1">
                 <img :src="activeIndex==4?require('../assets/images/kkh4.png'):require('../assets/images/kk4.png')"
                      alt="">
@@ -76,7 +76,7 @@
             </div>
           </div>
           <div class="list-line2">
-            <div class="item" @mouseenter="itemHover(5)" @mouseleave="itemHover(-1)">
+            <div class="item active-item1" @mouseenter="itemHover(5)" @mouseleave="itemHover(-1)">
               <div class="item-line1">
                 <img :src="activeIndex==5?require('../assets/images/kkh5.png'):require('../assets/images/kk5.png')"
                      alt="">
@@ -89,7 +89,7 @@
                 <img v-show="activeIndex==5" src="../assets/images/more0.png" alt="">
               </div>
             </div>
-            <div class="item" @mouseenter="itemHover(6)" @mouseleave="itemHover(-1)">
+            <div class="item active-item1" @mouseenter="itemHover(6)" @mouseleave="itemHover(-1)">
               <div class="item-line1">
                 <img :src="activeIndex==6?require('../assets/images/kkh6.png'):require('../assets/images/kk6.png')"
                      alt="">
@@ -102,7 +102,7 @@
                 <img v-show="activeIndex==6" src="../assets/images/more0.png" alt="">
               </div>
             </div>
-            <div class="item" @mouseenter="itemHover(7)" @mouseleave="itemHover(-1)">
+            <div class="item active-item1" @mouseenter="itemHover(7)" @mouseleave="itemHover(-1)">
               <div class="item-line1">
                 <img :src="activeIndex==7?require('../assets/images/kkh7.png'):require('../assets/images/kk7.png')"
                      alt="">
@@ -115,7 +115,7 @@
                 <img v-show="activeIndex==7" src="../assets/images/more0.png" alt="">
               </div>
             </div>
-            <div class="item" @mouseenter="itemHover(8)" @mouseleave="itemHover(-1)">
+            <div class="item active-item1" @mouseenter="itemHover(8)" @mouseleave="itemHover(-1)">
               <div class="item-line1">
                 <img :src="activeIndex==8?require('../assets/images/kkh8.png'):require('../assets/images/kk8.png')"
                      alt="">
@@ -128,7 +128,7 @@
                 <img v-show="activeIndex==8" src="../assets/images/more0.png" alt="">
               </div>
             </div>
-            <div class="item" @mouseenter="itemHover(9)" @mouseleave="itemHover(-1)">
+            <div class="item active-item1" @mouseenter="itemHover(9)" @mouseleave="itemHover(-1)">
               <div class="item-line1">
                 <img :src="activeIndex==9?require('../assets/images/kkh9.png'):require('../assets/images/kk9.png')"
                      alt="">
@@ -149,34 +149,34 @@
       <div class="progress">
         <div class="center">
           <div class="title">系统开发流程</div>
-          <div class="content">
+          <div class="content active-item2">
             <img src="../assets/images/progress0.png" alt="">
             <div class="items">
-              <div class="item item1">
+              <div class="item item1 active-item3">
                 <div class="item-num">01</div>
                 <div class="item-text">行业数据分析</div>
               </div>
-              <div class="item item2">
+              <div class="item item2 active-item3">
                 <div class="item-num">02</div>
                 <div class="item-text">品牌定位规范</div>
               </div>
-              <div class="item item3">
+              <div class="item item3 active-item3">
                 <div class="item-num">03</div>
                 <div class="item-text">功能需求调研</div>
               </div>
-              <div class="item item4">
+              <div class="item item4 active-item3">
                 <div class="item-num">04</div>
                 <div class="item-text">交互视觉设计</div>
               </div>
-              <div class="item item5">
+              <div class="item item5 active-item3">
                 <div class="item-num">05</div>
                 <div class="item-text">双端同步开发</div>
               </div>
-              <div class="item item6">
+              <div class="item item6 active-item3">
                 <div class="item-num">06</div>
                 <div class="item-text">后端并行开发</div>
               </div>
-              <div class="item item7">
+              <div class="item item7 active-item3">
                 <div class="item-num">07</div>
                 <div class="item-text">测试上线交付使用</div>
               </div>
@@ -187,35 +187,35 @@
       <div class="delivery-standard">
         <div class="title">交付标准</div>
         <div class="items">
-          <div class="item">
+          <div class="item active-item4">
             <div class="logo">
               <img src="../assets/images/d1.png" alt="">
             </div>
             <div class="item-text">项目计划书</div>
             <img class="hoverImg" src="../assets/images/df1.png">
           </div>
-          <div class="item">
+          <div class="item active-item4">
             <div class="logo">
               <img src="../assets/images/d2.png" alt="">
             </div>
             <div class="item-text">设计稿源文件</div>
             <img class="hoverImg" src="../assets/images/df2.png">
           </div>
-          <div class="item">
+          <div class="item active-item4">
             <div class="logo">
               <img src="../assets/images/d3.png" alt="">
             </div>
             <div class="item-text">源代码</div>
             <img class="hoverImg" src="../assets/images/df3.png">
           </div>
-          <div class="item">
+          <div class="item active-item4">
             <div class="logo">
               <img src="../assets/images/d4.png" alt="">
             </div>
             <div class="item-text">使用文档</div>
             <img class="hoverImg" src="../assets/images/df4.png">
           </div>
-          <div class="item">
+          <div class="item active-item4">
             <div class="logo">
               <img src="../assets/images/d5.png" alt="">
             </div>
@@ -225,8 +225,8 @@
         </div>
       </div>
       <div class="security">
-        <div class="left">
-          <div class="left-content" :style="'width:'+(520+(screenWidth-1300)/2) +'px'">
+        <div class="left active-left">
+          <div class="left-content active-left" :style="'width:'+(520+(screenWidth-1300)/2) +'px'">
             <div class="center-content">
               <div class="cc-title">
                 <img :src="securityImg[securityIndex]" alt="">
@@ -252,16 +252,16 @@
             </div>
           </div>
         </div>
-        <div class="right">
+        <div class="right ">
           <div class="right-title">系统安全标准</div>
           <img src="../assets/images/right-img.png" alt="">
         </div>
       </div>
       <div class="technology-support">
-        <div class="left">
+        <div class="left ">
           <img src="../assets/images/ss-l.png" alt="">
         </div>
-        <div class="right">
+        <div class="right active-right">
           <div class="right-title">技术支持</div>
           <div class="right-content" :style="'width:'+(745+(screenWidth-1300)/2)+'px;'">
             <div class="content-content">
@@ -365,6 +365,28 @@
           this.screenHeight = document.body.clientHeight;
         })();
       };
+
+      this.$nextTick(()=> {
+        //轮播图特效
+        this.$ami('.active-item1', 0, 'left', '0%', 0.9, true);
+        // this.$ami('.active-item2', 0, 'bottom', '30%', 0.9, true);
+        this.$ami('.active-item3:nth-child(1)', 100, 'top', '100%', 0.9, true);
+        this.$ami('.active-item3:nth-child(2)', 100, 'bottom', '100%', 0.9, true);
+        this.$ami('.active-item3:nth-child(3)', 100, 'top', '100%', 0.9, true);
+        this.$ami('.active-item3:nth-child(4)', 100, 'bottom', '100%', 0.9, true);
+        this.$ami('.active-item3:nth-child(5)', 100, 'top', '100%', 0.9, true);
+        this.$ami('.active-item3:nth-child(6)', 100, 'bottom', '100%', 0.9, true);
+        this.$ami('.active-item3:nth-child(7)', 100, 'top', '100%', 0.9, true);
+
+        this.$ami('.active-item4:nth-child(1)', 0, 'top', '100%', 0.9, true);
+        this.$ami('.active-item4:nth-child(2)', 100, 'top', '100%', 0.9, true);
+        this.$ami('.active-item4:nth-child(3)', 200, 'top', '100%', 0.9, true);
+        this.$ami('.active-item4:nth-child(4)', 300, 'top', '100%', 0.9, true);
+        this.$ami('.active-item4:nth-child(5)', 300, 'top', '100%', 0.9, true);
+        this.$ami('.active-left', 0, 'left', '50%', 0.9, true);
+        this.$ami('.active-right', 0, 'right', '100%', 0.9, true);
+
+      })
     }
   }
 </script>
@@ -432,6 +454,7 @@
               flex-direction: column;
               padding: 0 42px;
               box-sizing: border-box;
+              align-items: flex-start;
 
               .item-line1 {
 
@@ -488,6 +511,7 @@
               flex-direction: column;
               padding: 0 42px;
               box-sizing: border-box;
+              align-items: flex-start;
 
               .item-line1 {
 
