@@ -395,7 +395,7 @@
 <style scoped lang="less">
 
   .home-back {
-    background-image: url("../assets/images/home-back.png");
+    background-image: url("../assets/images/home-back.gif");
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;

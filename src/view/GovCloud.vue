@@ -578,10 +578,9 @@
         margin-top: 64px;
         width: 100%;
         height: 828px;
-        background-image: url("../assets/images/btm.png");
+        background-image: url("../assets/images/btm.gif");
         background-position: center;
         background-repeat: no-repeat;
-        background-size: cover;
         background-size: 120% 110%;
 
         .security-standard {
