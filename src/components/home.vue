@@ -24,6 +24,19 @@
 
 
     </div>
+
+    <link rel='stylesheet' href='http://5sh5sh.cn/assets/css/index/cgwl_online.css'>
+    <div class="cgwl-form" id="cgwl-kefu" >
+      <i class="cgwl-icon"></i>
+      <form class="cgwl-item" action="http://5sh5sh.cn/index/index/home?visiter_id=&visiter_name=&avatar=&business_id=9&groupid=0" method="post" target="_blank" >
+        <input type="hidden" name="product" value='123'>
+        <input type="submit" value='在线咨询'>
+      </form>
+    </div>
+
+
+
+
     <!-- <div class="banner">
       <div class="swiper-container">
         <div class="swiper-wrapper">
@@ -187,6 +200,8 @@
 
     },
     mounted (){
+
+
       var _this=this;
       new Swiper ('.swiper-container', {
         followFinger : false,
